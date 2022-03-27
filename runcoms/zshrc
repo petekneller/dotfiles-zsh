@@ -5,9 +5,115 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
 # Customize to your needs...
+
+#
+# History module
+#
+setopt noautocd
+unalias d
+for index ({1..9}) unalias "$index";
+
+#
+# Utility module
+#
+
+# Disable correction.
+unalias ebuild
+unalias gcc
+unalias gist
+unalias heroku
+unalias mysql
+# Disable globbing.
+unalias bower
+unalias fc
+unalias locate
+unalias rake
+# General aliases
+unalias _
+unalias b
+unalias diffu
+unalias e
+unalias mkdir
+unalias p
+unalias po
+unalias pu
+unalias sa
+unalias type
+# Safe ops. Ask the user before doing anything destructive.
+unalias cpi
+unalias lni
+unalias mvi
+unalias rmi
+# ls
+unalias l
+unalias ll
+unalias lr
+unalias la
+unalias lm
+unalias lk
+unalias lt
+unalias lc
+unalias lu
+unalias sl
+unalias lx
+# macOS everywhere
+unalias o
+unalias pbcopy
+unalias pbc
+unalias pbpaste
+unalias pbp
+# Resource Usage
+unalias topc
+unalias topm
+
+
+# 
+# My own stuff
+#
+
+# Environment
+export EDITOR=vim
+export VISUAL=vim
+setopt nobeep
+
+# Useful aliases
+alias ll='ls -alh'
+alias gits="git status"
+alias gitc="git commit -m"
+alias gitca="git commit -am"
+alias gitpr="git pull --rebase"
+
+# fzf key bindings, but remove bindings other than history search
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+bindkey -r "^T" 
+bindkey -r "^[c" 
+
+#
+# zplug
+# Installed with the below and then self-managed (see defn for zplug/zplug)
+# curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+#
+source $HOME/.zplug/init.zsh
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+
+# Oh-my-zsh's pj
+zplug "plugins/pj", from:oh-my-zsh
+export PROJECT_PATHS=(~/src)
+
+zplug load
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
