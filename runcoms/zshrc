@@ -95,6 +95,8 @@ alias gits="git status"
 alias gitc="git commit -m"
 alias gitca="git commit -am"
 alias gitpr="git pull --rebase"
+alias prettypath='echo $PATH | tr ":" "\n"'
+alias pp=prettypath
 
 # fzf key bindings, but remove bindings other than history search
 source /usr/share/doc/fzf/examples/key-bindings.zsh
