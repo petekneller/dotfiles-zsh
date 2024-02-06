@@ -68,12 +68,12 @@ unalias lt
 unalias lc
 unalias lu
 unalias sl
-unalias lx
+#unalias lx
 # macOS everywhere
 unalias o
-unalias pbcopy
-unalias pbc
-unalias pbpaste
+#unalias pbcopy
+#unalias pbc
+#unalias pbpaste
 unalias pbp
 # Resource Usage
 unalias topc
