@@ -63,3 +63,4 @@ if (( $#commands[(i)lesspipe(|.sh)] )); then
 fi
 
 source "${HOME}/src/dotfiles-zsh/runcoms/add_paths.sh"
+source "${HOME}/src/dotfiles-zsh/runcoms/nvm.sh"
