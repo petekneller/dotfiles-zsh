@@ -1,4 +1,0 @@
-# Necessary to do this here and source it from both zshrc and bashrc because dmenu_run doesn't understand zsh
-
-export PATH=~/bin:${PATH}
-export PATH=~/.local/bin:${PATH}
