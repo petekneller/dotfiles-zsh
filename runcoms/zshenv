@@ -14,4 +14,5 @@ fi
 # Using this startup script for common environment
 source "${HOME}/src/dotfiles-zsh/runcoms/add_paths.sh"
 source "${HOME}/src/dotfiles-zsh/runcoms/nvm.sh"
+source "${HOME}/src/dotfiles-zsh/runcoms/sdkman.sh"
 

@@ -125,10 +125,6 @@ zplug load
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# SDKMAN
-[[ -s "$HOME/.sdkman" ]] && export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
 # NGV macbook specific
 if [[ "$OSTYPE" == darwin* ]]; then
     [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
