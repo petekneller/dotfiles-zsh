@@ -9,3 +9,9 @@
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+# Under i3+alacritty the SHLVL env var is always > 1, so the zprofile is not source in most shells
+# Using this startup script for common environment
+source "${HOME}/src/dotfiles-zsh/runcoms/add_paths.sh"
+source "${HOME}/src/dotfiles-zsh/runcoms/nvm.sh"
+
