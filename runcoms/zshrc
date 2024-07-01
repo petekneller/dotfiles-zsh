@@ -112,6 +112,8 @@ bindkey -r "^[c"
 # zplug
 # Installed with the below and then self-managed (see defn for zplug/zplug)
 # curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+#   and then...
+# zplug install
 #
 source $HOME/.zplug/init.zsh
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
