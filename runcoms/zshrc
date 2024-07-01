@@ -98,7 +98,10 @@ alias gitpr="git pull --rebase"
 alias prettypath='echo $PATH | tr ":" "\n"'
 alias pp=prettypath
 
-# fzf key bindings, but remove bindings other than history search
+# FZF
+# installation note: install, ensure $(which fzf), and then find the following shell setup scripts
+
+# key bindings, but remove bindings other than history search
 if [ -f /usr/share/fzf/key-bindings.zsh ]; then # Arch
   source /usr/share/fzf/key-bindings.zsh
 fi
