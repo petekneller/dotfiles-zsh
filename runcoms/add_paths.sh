@@ -10,9 +10,6 @@ export PATH="${PATH}:${HOME}/.local/bin"
 if [[ "$OSTYPE" == darwin* ]]; then
    export PATH="${PATH}:/opt/homebrew/bin"
 
-   # python
-   export PATH="${PATH}:${HOME}/Library/Python/3.11/bin"
-
    # golang installed apps
    export PATH="${PATH}:/Users/pete.kneller/go/bin"
 fi
