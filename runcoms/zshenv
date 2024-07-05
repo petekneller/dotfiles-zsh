@@ -15,4 +15,4 @@ fi
 source "${HOME}/src/dotfiles-zsh/runcoms/add_paths.sh"
 source "${HOME}/src/dotfiles-zsh/runcoms/nvm.sh"
 source "${HOME}/src/dotfiles-zsh/runcoms/sdkman.sh"
-
+source "${HOME}/src/dotfiles-zsh/runcoms/homebrew.sh"

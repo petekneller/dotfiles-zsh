@@ -8,8 +8,6 @@ export PATH="${PATH}:${HOME}/.local/bin"
 
 # NGV Macbook specific
 if [[ "$OSTYPE" == darwin* ]]; then
-   export PATH="${PATH}:/opt/homebrew/bin"
-
    # golang installed apps
    export PATH="${PATH}:/Users/pete.kneller/go/bin"
 fi
