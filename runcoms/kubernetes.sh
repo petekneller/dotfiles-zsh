@@ -12,5 +12,4 @@
 #  ./"${KREW}" install krew
 #)
 
-export PATH="$HOME/.krew/bin:$PATH"
-
+[[ -d $HOME/.krew ]] && export PATH="$HOME/.krew/bin:$PATH"
