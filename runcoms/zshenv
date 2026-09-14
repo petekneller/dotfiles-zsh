@@ -13,6 +13,7 @@ fi
 # Under i3+alacritty the SHLVL env var is always > 1, so the zprofile is not source in most shells
 # Using this startup script for common environment
 source "${HOME}/src/dotfiles-zsh/runcoms/add_paths.sh"
+source "${HOME}/src/dotfiles-zsh/runcoms/gpg.sh"
 source "${HOME}/src/dotfiles-zsh/runcoms/nvm.sh"
 source "${HOME}/src/dotfiles-zsh/runcoms/sdkman.sh"
 source "${HOME}/src/dotfiles-zsh/runcoms/homebrew.sh"
